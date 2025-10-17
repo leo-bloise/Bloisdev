@@ -4,10 +4,9 @@ import sys
 import psycopg2
 import psycopg2.extras
 
-
 def process_file(filename: str, title: str) -> None:    
     print(f"Processing file {filename} 🧙")
-    
+
     _, ext = os.path.splitext(filename)
     if ext.lower() not in {".md", ".markdown"}:
         print(f"Error: file '{filename}' does not look like a Markdown file.", file=sys.stderr)
