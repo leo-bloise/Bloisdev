@@ -24,10 +24,10 @@ jobs:
 
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller --onefile ./src/bloisdev_cli/main.py -n bloisedev
+          pyinstaller --onefile ./src/bloisdev_cli/main.py -n bloisdev_cli
 
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: bloisedev-cli-exe
-          path: dist/bloisedev.exe
+          name: bloisdev_cli.exe
+          path: dist/bloisdev_cli.exe
