@@ -1,0 +1,10 @@
+[project]
+name = "bloisdev_cli"
+version = "0.0.1"
+description = "CLI Tool developed to publish my articles in bloisdev.com"
+requires-python = ">=3.14"
+license = "MIT"
+dependencies = ["psycopg2"]
+
+[project.urls]
+Homepage = "https://bloisdev.com/"
